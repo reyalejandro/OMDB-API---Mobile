@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/transparent"
+    tools:context=".Fragments.FragmentMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:backgroundTint="@android:color/transparent"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btnListas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borde_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_list"
+            android:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/btnFavoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borde_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_star"
+            android:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btnAcercaDe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borde_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_acerca_de"
+            android:tint="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

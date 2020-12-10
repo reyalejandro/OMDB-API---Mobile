@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="@android:color/transparent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fraContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="561dp">
+
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/fraMenu"
+        android:name="com.rey.OMDB_API.Fragments.FragmentMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_menu" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.rey.OMDB_API.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/fragmentListado"
+        android:name="com.rey.OMDB_API.Fragments.FragmentListado"
+        android:label="fragment_listado"
+        tools:layout="@layout/fragment_listado" />
+    <fragment
+        android:id="@+id/fragmentFavoritos"
+        android:name="com.rey.OMDB_API.Fragments.FragmentFavoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/fragmentAcercaDe"
+        android:name="com.rey.OMDB_API.Fragments.FragmentAcercaDe"
+        android:label="fragment_acerca_de"
+        tools:layout="@layout/fragment_acerca_de" />
+    <fragment
+        android:id="@+id/fragmentMenu"
+        android:name="com.rey.OMDB_API.Fragments.FragmentMenu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentListado"
+            app:destination="@id/fragmentListado"
+            app:enterAnim="@anim/transicion_der_a_izq"
+            app:exitAnim="@anim/t_salir_der_a_izq" />
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentFavoritos"
+            app:destination="@id/fragmentFavoritos"
+            app:enterAnim="@anim/transicion_der_a_izq"
+            app:exitAnim="@anim/t_salir_der_a_izq" />
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentAcercaDe"
+            app:destination="@id/fragmentAcercaDe"
+            app:enterAnim="@anim/transicion_izq_a_der"
+            app:exitAnim="@anim/t_salir_izq_a_der" />
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentFavoritos2"
+            app:destination="@id/fragmentFavoritos"
+            app:enterAnim="@anim/transicion_izq_a_der"
+            app:exitAnim="@anim/t_salir_izq_a_der" />
+    </fragment>
+</navigation>
